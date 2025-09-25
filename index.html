@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Background Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+     <video class="heart-video"
+         src="myvideo.mp4"
+         autoplay
+         playsinline
+         controls>
+  </video>
+  
+
+  <script>
+    const video = document.querySelector('.heart-video');
+    video.addEventListener('ended', () => {
+      window.location.href = "fiona.html"; // <-- change to your target page
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen background */
+body {
+  background: url('bg3.jpg') no-repeat center center/cover;
+  background-size: contain;   /* <— fits the whole image */
+  background-color: green; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive audio player */
+audio {
+  width: 100%;
+  max-width: 300px;
+}
+.heart-video {
+  position: absolute;
+  top: 18%;                   /* move up/down if needed */
+  left: 48%;
+  transform: translateX(-50%);
+  width: min(12vw, 150px);     /* slightly smaller than before */
+  aspect-ratio: 9 / 16;        /* keep vertical Reels shape */
+  object-fit: contain;         /* no cropping */
+  max-height: 90vh;
+  border-radius: 12px;         /* optional rounded corners */
+}
+
+body.fiona {
+    background: url('fiona.png') no-repeat center center/cover;
+     background-size: contain;   /* <— fits the whole image */
+  background-color: green; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
